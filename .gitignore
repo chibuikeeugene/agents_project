@@ -1,3 +1,5 @@
 /agents_app
 *.env
-/test_agent/.venv
+adp/.venv/
+adp/langchain-academy/
+*.lock
