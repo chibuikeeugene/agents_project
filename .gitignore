@@ -1,3 +1,6 @@
 /agents_app
 *.env
 /test_agent/.venv
+adp/.venv
+agent_env/
+scalable_capital_iaac/.terraform/
