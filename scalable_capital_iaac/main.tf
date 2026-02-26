@@ -74,7 +74,7 @@ resource "aws_lambda_function" "add_order" {
   runtime       = "python3.11"
   role          = aws_iam_role.lambda_role.arn
   filename      = data.archive_file.add_order_zip.output_path
-
+  source_code_hash = data.archive_file.add_order_zip.output_base64sha256
 
   environment {
     variables = {
@@ -97,6 +97,7 @@ resource "aws_lambda_function" "process_order" {
   runtime       = "python3.11"
   role          = aws_iam_role.lambda_role.arn
   filename      = data.archive_file.process_order_zip.output_path
+  source_code_hash = data.archive_file.process_order_zip.output_base64sha256
 }
 
 
