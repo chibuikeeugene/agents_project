@@ -115,6 +115,7 @@ resource "aws_apigatewayv2_api" "orders_api" {
 }
 
 
+# Links API Gateway to the AddOrder Lambda using proxy integration.
 resource "aws_apigatewayv2_integration" "add_order_integration" {
   api_id           = aws_apigatewayv2_api.orders_api.id
   integration_type = "AWS_PROXY"
@@ -122,21 +123,21 @@ resource "aws_apigatewayv2_integration" "add_order_integration" {
   integration_method = "POST"
 }
 
-
+# Define a route for POST /orders that triggers the AddOrder Lambda function.
 resource "aws_apigatewayv2_route" "post_orders" {
   api_id    = aws_apigatewayv2_api.orders_api.id
   route_key = "POST /orders"
   target    = "integrations/${aws_apigatewayv2_integration.add_order_integration.id}"
 }
 
-
+# Creates a deployment stage (environment) for the API
 resource "aws_apigatewayv2_stage" "default" {
   api_id      = aws_apigatewayv2_api.orders_api.id
   name        = "$default"
   auto_deploy = true
 }
 
-
+# Grants API Gateway permission to call the AddOrder Lambda
 resource "aws_lambda_permission" "api_gw_permission" {
   statement_id  = "AllowAPIGatewayInvoke"
   action        = "lambda:InvokeFunction"
