@@ -1,0 +1,10 @@
+pillow
+pytesseract
+langchain
+langgraph
+langchain_ollama
+python-dotenv
+opencv-python
+paddleocr
+matplotlib
+paddlepaddle

@@ -4,3 +4,4 @@
 adp/.venv
 agent_env/
 scalable_capital_iaac/.terraform/
+*.jpg
