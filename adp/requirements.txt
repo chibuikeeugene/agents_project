@@ -8,3 +8,5 @@ opencv-python
 paddleocr
 matplotlib
 paddlepaddle
+transformers
+torch
