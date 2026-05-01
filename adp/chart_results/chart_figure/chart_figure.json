@@ -1,0 +1,128 @@
+[
+  [
+    {
+      "index": 0,
+      "label": "image",
+      "bbox_2d": [
+        1,
+        58,
+        461,
+        480
+      ],
+      "polygon": [
+        [
+          1,
+          58
+        ],
+        [
+          6,
+          480
+        ],
+        [
+          460,
+          480
+        ],
+        [
+          460,
+          58
+        ]
+      ],
+      "content": null,
+      "native_label": "chart",
+      "image_path": "imgs/cropped_page0_idx0.jpg"
+    },
+    {
+      "index": 1,
+      "label": "image",
+      "bbox_2d": [
+        498,
+        59,
+        967,
+        480
+      ],
+      "polygon": [
+        [
+          498,
+          64
+        ],
+        [
+          498,
+          480
+        ],
+        [
+          966,
+          480
+        ],
+        [
+          966,
+          59
+        ]
+      ],
+      "content": null,
+      "native_label": "chart",
+      "image_path": "imgs/cropped_page0_idx1.jpg"
+    },
+    {
+      "index": 2,
+      "label": "image",
+      "bbox_2d": [
+        1,
+        564,
+        468,
+        981
+      ],
+      "polygon": [
+        [
+          1,
+          564
+        ],
+        [
+          1,
+          981
+        ],
+        [
+          467,
+          981
+        ],
+        [
+          463,
+          564
+        ]
+      ],
+      "content": null,
+      "native_label": "chart",
+      "image_path": "imgs/cropped_page0_idx2.jpg"
+    },
+    {
+      "index": 3,
+      "label": "image",
+      "bbox_2d": [
+        499,
+        566,
+        966,
+        982
+      ],
+      "polygon": [
+        [
+          499,
+          566
+        ],
+        [
+          499,
+          981
+        ],
+        [
+          965,
+          981
+        ],
+        [
+          965,
+          566
+        ]
+      ],
+      "content": null,
+      "native_label": "chart",
+      "image_path": "imgs/cropped_page0_idx3.jpg"
+    }
+  ]
+]
