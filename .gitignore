@@ -1,7 +1,7 @@
 /agents_app
 *.env
 /test_agent/.venv
-adp/.venv
+agentic_doc_processing_app/.venv
 agent_env/
 scalable_capital_iaac/.terraform/
 *.jpg
